@@ -1,0 +1,16 @@
+body{
+    background-color: blue;
+    text-transform: uppercase;
+}
+.special{
+    color: orange;
+    font-weight: bold;
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    color: yellow;
+    position: relative;
+    top: 500px;
+}

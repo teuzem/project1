@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #333;
+    z-index: 10; /* Ensures the navbar is on top */
+    position: relative;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    width: 100%;
+}
+
+.navbar a {
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.navbar i {
+    margin-right: 8px;
+}
+
+.first-section {
+    align-items: center;
+    background-image: url('./../assets/images/section1-bg.jpg'); /* Replace with your background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0; /* Increased padding for better separation from the navbar */
+    margin: 0;
+    position: relative;
+    z-index: 1; /* Ensures the section is below the navbar */
+    padding-top: 100px;
+}
+
+.content {
+    max-width: 600px;
+}
+
+.first-section h2 {
+    font-size: 36px;
+    color: white;
+    margin-left: 200px;
+}
+
+.global {
+    color: #FFA500; /* Change text color */
+    font-weight: bold; /* Make text bold */
+    padding: 2px 4px; /* Add some padding */
+    border-radius: 3px; /* Optional: Add rounded corners */
+}
+
+.first-section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(44, 44, 44);
+    margin-left: 200px;
+    margin-top: -30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: 200px;
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    background-color: #FFA500;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: blueviolet;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    padding: 12px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+
+.btn-secondary:hover {
+    background-color: #FFC107;
+    transform: translateY(-2px);
+}
+
+.second-section {  
+    background: linear-gradient(to bottom, #e0e0e0, #ffffff); /* Dégradé similaire au thème de fond de chat WhatsApp */  
+    padding: 40px 80px;  
+    text-align: center;  
+    color: black;  
+}  
+
+.inner-section {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    gap: 20px;  
+}  
+
+.left-column {  
+    max-width: 400px;  
+    text-align: left;  
+}  
+
+.left-column h2 {  
+    font-size: 1.8em;  
+    font-family: 'Poppins', sans-serif;  
+    text-transform: uppercase;  
+    margin: 0;  
+}  
+
+.highlight {  
+    color: #FFA500; /* Orange clair */  
+}  
+
+.left-column p {  
+    color: #333333; /* Noir clair */  
+    font-family: 'Poppins', sans-serif;  
+    text-align: justify;  
+    margin: 20px 0;  
+}  
+
+.left-column button {  
+    background-color: white;  
+    color: black;  
+    border: 2px solid #FFA500; /* Orange clair */  
+    border-radius: 5px;  
+    padding: 10px 20px;  
+    font-size: 1em;  
+    text-transform: uppercase;  
+    cursor: pointer;  
+    transition: background-color 0.3s, color 0.3s;  
+}  
+
+.left-column button:hover {  
+    background-color: yellow;  
+    color: white;  
+}  
+
+.right-column {  
+    display: flex;  
+    flex-direction: column;  
+    gap: 20px;  
+}  
+
+.icon-box-container {  
+    display: flex;  
+    flex-direction: column;  
+    gap: 20px;  
+}  
+
+.icon-box {  
+    background: linear-gradient(Orange); /* Orange to Purple gradient */  
+    border-radius: 10px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    padding: 15px;  
+    text-align: center;  
+    transition: transform 0.3s;  
+    width: 100%; /* Make the boxes smaller */  
+}  
+
+.icon-box:hover {  
+    transform: translateY(-10px);  
+}  
+
+.icon {  
+    background: #e0f7fa;  
+    border-radius: 50%;  
+    padding: 10px;  
+    margin-bottom: 10px;  
+    font-size: 24px;  
+}  
+
+.title {  
+    font-size: 1.2em;  
+    color: #333333; /* Noir clair */  
+    font-family: 'Poppins', sans-serif;  
+    margin: 10px 0;  
+}  
+
+.description {  
+    color: #666;  
+    font-family: 'Open Sans', sans-serif;  
+}  
+
+.line {  
+    height: 1px;  
+    background-color: #D3D3D3; /* Gris clair */  
+    margin: 10px 0;  
+} 
+
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .services-section {
+    background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .section-description {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .service-icon-boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  .service-icon-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 22%;
+    margin: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .service-icon-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-icon {
+    background: #e0f7fa;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .service-title {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .service-description {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fourth-section {
+    background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .inner-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .left-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .fraud-service-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+    color: blue;
+    text-align: center;
+    height: 200px;
+    display: grid;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between boxes */
+    justify-content: center; /* Center the grid */
+    display: flex;
+  }
+  
+  .grid-item {
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    height: 200px; /* Ensure all boxes are square */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fraud-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .fraud-title {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  
+  .right-columns {
+    max-width: 400px;
+    text-align: center;
+    align-items: center;
+    margin-left: 200px;
+  }
+  
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .section-description {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .offers-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #333;
+  }
+  
+  .cta-button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #FF8C00;
+    color: white;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
